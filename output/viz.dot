@@ -1,0 +1,287 @@
+digraph "" {
+	graph [bb="0,0,2243,1708",
+		clusterrank=local,
+		fontname=helvetica,
+		rankdir=TB,
+		ranksep=2,
+		splines=polyline
+	];
+	node [fontname=helvetica,
+		label="\N",
+		shape=box,
+		style=filled
+	];
+	subgraph "cluster-644589a6" {
+		graph [bb="1685,1100,2235,1518",
+			rank=same,
+			style=invis
+		];
+		"CallNode(hash='644589a6', task_name='bioinformatics.genoms.align', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', 'SRR20043616.fastq'])"	[fillcolor="#B5D3E7",
+			height=0.52778,
+			label="CallNode
+bioinformatics.genoms.align",
+			pos="1787,1309",
+			width=2.5694];
+		"(Value(hash='a6779283', value=File(path=output/aligned.gz, hash=a6779283)), [CallNode(hash='644589a6', task_name='bioinformatics.genoms.align', \
+args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', 'SRR20043616.fastq'])])"	[height=0.52778,
+			label="Value
+File(path=output/aligned.gz)",
+			pos="1787,1127",
+			width=2.5694];
+		"CallNode(hash='644589a6', task_name='bioinformatics.genoms.align', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', 'SRR20043616.fastq'])" -> "(Value(hash='a6779283', value=File(path=output/aligned.gz, hash=a6779283)), [CallNode(hash='644589a6', task_name='bioinformatics.genoms.align', \
+args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', 'SRR20043616.fastq'])])"	[pos="e,1787,1146 1787,1289.8 1787,1258.3 1787,1193.6 1787,1156.2"];
+		"(Value(hash='26ef2e5f', value='ref_genome/GCF_000005845.2_ASM584v2_genomic.fna'), 'cfdc4b744afbc0a45c401aefdfffbb7f4e91d7a8')"	[height=0.52778,
+			label="Value
+'ref_genome/GCF_000005845.2_ASM584v2_genomic.fna'",
+			pos="2041,1491",
+			width=5.1528];
+		"(Value(hash='26ef2e5f', value='ref_genome/GCF_000005845.2_ASM584v2_genomic.fna'), 'cfdc4b744afbc0a45c401aefdfffbb7f4e91d7a8')" -> "CallNode(hash='644589a6', task_name='bioinformatics.genoms.align', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', 'SRR20043616.fastq'])"	[pos="e,1812.4,1328 2015.2,1471.8 1969.1,1439.1 1872.4,1370.5 1820.9,1334"];
+		"(Value(hash='19e2fc14', value='SRR20043616.fastq'), 'cbd857d322bd079140df82bfa5c7ece274ea38a6')"	[height=0.52778,
+			label="Value
+'SRR20043616.fastq'",
+			pos="1765,1491",
+			width=2];
+		"(Value(hash='19e2fc14', value='SRR20043616.fastq'), 'cbd857d322bd079140df82bfa5c7ece274ea38a6')" -> "CallNode(hash='644589a6', task_name='bioinformatics.genoms.align', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', 'SRR20043616.fastq'])"	[pos="e,1784.8,1328 1767.2,1471.8 1771.1,1440.3 1779,1375.6 1783.6,1338.2"];
+	}
+	subgraph "cluster-0c5dceb9" {
+		graph [bb="8,1100,318,1518",
+			rank=same,
+			style=invis
+		];
+		"CallNode(hash='0c5dceb9', task_name='bioinformatics.genoms.generate_fasqc_report', args=['SRR20043616.fastq'])"	[fillcolor="#B5D3E7",
+			height=0.52778,
+			label="CallNode
+bioinformatics.genoms.generate_fasqc_report",
+			pos="163,1309",
+			width=4.0694];
+		"(Value(hash='4a866375', value=File(path=output/SRR20043616_fastqc.html, hash=4a866375)), [CallNode(hash='0c5dceb9', task_name='bioinformatics.genoms.generate_\
+fasqc_report', args=['SRR20043616.fastq'])])"	[height=0.52778,
+			label="Value
+File(path=output/SRR20043616_fastqc.html)",
+			pos="163,1127",
+			width=3.9583];
+		"CallNode(hash='0c5dceb9', task_name='bioinformatics.genoms.generate_fasqc_report', args=['SRR20043616.fastq'])" -> "(Value(hash='4a866375', value=File(path=output/SRR20043616_fastqc.html, hash=4a866375)), [CallNode(hash='0c5dceb9', task_name='bioinformatics.genoms.generate_\
+fasqc_report', args=['SRR20043616.fastq'])])"	[pos="e,163,1146 163,1289.8 163,1258.3 163,1193.6 163,1156.2"];
+		"(Value(hash='19e2fc14', value='SRR20043616.fastq'), 'd826b186243a2b77601a84c1c0028cebaddfe6f1')"	[height=0.52778,
+			label="Value
+'SRR20043616.fastq'",
+			pos="163,1491",
+			width=2];
+		"(Value(hash='19e2fc14', value='SRR20043616.fastq'), 'd826b186243a2b77601a84c1c0028cebaddfe6f1')" -> "CallNode(hash='0c5dceb9', task_name='bioinformatics.genoms.generate_fasqc_report', args=['SRR20043616.fastq'])"	[pos="e,163,1328 163,1471.8 163,1440.3 163,1375.6 163,1338.2"];
+	}
+	subgraph "cluster-31d64574" {
+		graph [bb="358,1282,908,1700",
+			rank=same,
+			style=invis
+		];
+		"CallNode(hash='31d64574', task_name='bioinformatics.genoms.main', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', 'SRR20043616.fastq'])"	[fillcolor="#B5D3E7",
+			height=0.52778,
+			label="CallNode
+bioinformatics.genoms.main",
+			pos="760,1491",
+			width=2.5972];
+		"(Value(hash='30bf5cd4', value=(File(path=output/SRR20043616_fastqc.html, hash=4a866375), File(path=output/results.vcf, hash=204f6904))), [\
+CallNode(hash='31d64574', task_name='bioinformatics.genoms.main', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', 'SRR20043616.fastq'])])"	[height=0.52778,
+			label="Value
+(File(path=output/SRR20043616_fastqc.html), File(path=output/results.vcf))",
+			pos="601,1309",
+			width=6.5139];
+		"CallNode(hash='31d64574', task_name='bioinformatics.genoms.main', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', 'SRR20043616.fastq'])" -> "(Value(hash='30bf5cd4', value=(File(path=output/SRR20043616_fastqc.html, hash=4a866375), File(path=output/results.vcf, hash=204f6904))), [\
+CallNode(hash='31d64574', task_name='bioinformatics.genoms.main', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', 'SRR20043616.fastq'])])"	[pos="e,616.93,1328 743.88,1471.8 715.47,1439.6 656.44,1372.8 623.84,1335.9"];
+		"(Value(hash='26ef2e5f', value='ref_genome/GCF_000005845.2_ASM584v2_genomic.fna'), 'c01a8cb37f8262da13636bff16fe2a04672ed923')"	[height=0.52778,
+			label="Value
+'ref_genome/GCF_000005845.2_ASM584v2_genomic.fna'",
+			pos="714,1673",
+			width=5.1528];
+		"(Value(hash='26ef2e5f', value='ref_genome/GCF_000005845.2_ASM584v2_genomic.fna'), 'c01a8cb37f8262da13636bff16fe2a04672ed923')" -> "CallNode(hash='31d64574', task_name='bioinformatics.genoms.main', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', 'SRR20043616.fastq'])"	[pos="e,755.39,1510 718.66,1653.8 726.74,1622.1 743.39,1557 752.91,1519.7"];
+		"(Value(hash='19e2fc14', value='SRR20043616.fastq'), 'b02b96309b93a341858725239f4a9d8fc2279f84')"	[height=0.52778,
+			label="Value
+'SRR20043616.fastq'",
+			pos="438,1673",
+			width=2];
+		"(Value(hash='19e2fc14', value='SRR20043616.fastq'), 'b02b96309b93a341858725239f4a9d8fc2279f84')" -> "CallNode(hash='31d64574', task_name='bioinformatics.genoms.main', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', 'SRR20043616.fastq'])"	[pos="e,727.67,1510.1 470.35,1653.9 529.3,1621 654.09,1551.2 718.93,1515"];
+	}
+	subgraph "cluster-9b0b2d1f" {
+		graph [bb="1070,736,1304,1154",
+			rank=same,
+			style=invis
+		];
+		"CallNode(hash='9b0b2d1f', task_name='bioinformatics.genoms.sam2bam', args=[File(path=output/aligned.gz, hash=a6779283), 'output/\
+result.bam'])"	[fillcolor="#B5D3E7",
+			height=0.52778,
+			label="CallNode
+bioinformatics.genoms.sam2bam",
+			pos="1187,945",
+			width=3.0278];
+		"(Value(hash='7075ecc1', value=File(path=output/result.bam, hash=7075ecc1)), [CallNode(hash='9b0b2d1f', task_name='bioinformatics.genoms.sam2bam', \
+args=[File(path=output/aligned.gz, hash=a6779283), 'output/result.bam'])])"	[height=0.52778,
+			label="Value
+File(path=output/result.bam)",
+			pos="1187,763",
+			width=2.5972];
+		"CallNode(hash='9b0b2d1f', task_name='bioinformatics.genoms.sam2bam', args=[File(path=output/aligned.gz, hash=a6779283), 'output/\
+result.bam'])" -> "(Value(hash='7075ecc1', value=File(path=output/result.bam, hash=7075ecc1)), [CallNode(hash='9b0b2d1f', task_name='bioinformatics.genoms.sam2bam', \
+args=[File(path=output/aligned.gz, hash=a6779283), 'output/result.bam'])])"	[pos="e,1187,782.03 1187,925.75 1187,894.27 1187,829.55 1187,792.22"];
+		"(Value(hash='694e8674', value='output/result.bam'), '6f46cd116bd0b13f84330a676511e092e32aff91')"	[height=0.52778,
+			label="Value
+'output/result.bam'",
+			pos="1142,1127",
+			width=1.7778];
+		"(Value(hash='694e8674', value='output/result.bam'), '6f46cd116bd0b13f84330a676511e092e32aff91')" -> "CallNode(hash='9b0b2d1f', task_name='bioinformatics.genoms.sam2bam', args=[File(path=output/aligned.gz, hash=a6779283), 'output/\
+result.bam'])"	[pos="e,1182.5,964.03 1146.6,1107.8 1154.5,1076.1 1170.8,1011 1180.1,973.75"];
+	}
+	subgraph "cluster-2c694313" {
+		graph [bb="666,372,882,790",
+			rank=same,
+			style=invis
+		];
+		"CallNode(hash='2c694313', task_name='bioinformatics.genoms.flagstat', args=[File(path=output/result.bam, hash=7075ecc1), 'output/\
+flagstat.txt'])"	[fillcolor="#B5D3E7",
+			height=0.52778,
+			label="CallNode
+bioinformatics.genoms.flagstat",
+			pos="774,581",
+			width=2.7778];
+		"(Value(hash='e1c3d581', value=File(path=output/flagstat.txt, hash=e1c3d581)), [CallNode(hash='2c694313', task_name='bioinformatics.genoms.flagstat', \
+args=[File(path=output/result.bam, hash=7075ecc1), 'output/flagstat.txt'])])"	[height=0.52778,
+			label="Value
+File(path=output/flagstat.txt)",
+			pos="770,399",
+			width=2.5694];
+		"CallNode(hash='2c694313', task_name='bioinformatics.genoms.flagstat', args=[File(path=output/result.bam, hash=7075ecc1), 'output/\
+flagstat.txt'])" -> "(Value(hash='e1c3d581', value=File(path=output/flagstat.txt, hash=e1c3d581)), [CallNode(hash='2c694313', task_name='bioinformatics.genoms.flagstat', \
+args=[File(path=output/result.bam, hash=7075ecc1), 'output/flagstat.txt'])])"	[pos="e,770.4,418.03 773.59,561.75 772.89,530.27 771.46,465.55 770.63,428.22"];
+		"(Value(hash='0f4e7af1', value='output/flagstat.txt'), '5a9f09a1625820e7d70940b7c98c233c156e5f76')"	[height=0.52778,
+			label="Value
+'output/flagstat.txt'",
+			pos="811,763",
+			width=1.7361];
+		"(Value(hash='0f4e7af1', value='output/flagstat.txt'), '5a9f09a1625820e7d70940b7c98c233c156e5f76')" -> "CallNode(hash='2c694313', task_name='bioinformatics.genoms.flagstat', args=[File(path=output/result.bam, hash=7075ecc1), 'output/\
+flagstat.txt'])"	[pos="e,777.71,600.03 807.25,743.75 800.78,712.27 787.47,647.55 779.8,610.22"];
+	}
+	subgraph "cluster-0e5f42ed" {
+		graph [bb="350,8,606,426",
+			rank=same,
+			style=invis
+		];
+		"CallNode(hash='0e5f42ed', task_name='bioinformatics.genoms.check_results', args=[File(path=output/flagstat.txt, hash=e1c3d581), '\
+output/results.txt'])"	[fillcolor="#B5D3E7",
+			height=0.52778,
+			label="CallNode
+bioinformatics.genoms.check_results",
+			pos="478,217",
+			width=3.3194];
+		"(Value(hash='4ea83061', value=True), [CallNode(hash='0e5f42ed', task_name='bioinformatics.genoms.check_results', args=[File(path=\
+output/flagstat.txt, hash=e1c3d581), 'output/results.txt'])])"	[height=0.52778,
+			label="Value
+True",
+			pos="478,35",
+			width=0.75];
+		"CallNode(hash='0e5f42ed', task_name='bioinformatics.genoms.check_results', args=[File(path=output/flagstat.txt, hash=e1c3d581), '\
+output/results.txt'])" -> "(Value(hash='4ea83061', value=True), [CallNode(hash='0e5f42ed', task_name='bioinformatics.genoms.check_results', args=[File(path=\
+output/flagstat.txt, hash=e1c3d581), 'output/results.txt'])])"	[pos="e,478,54.031 478,197.75 478,166.27 478,101.55 478,64.225"];
+		"(Value(hash='91be2edf', value='output/results.txt'), 'b57796959534fe9c3edcb00244bcbc534dc7ee76')"	[height=0.52778,
+			label="Value
+'output/results.txt'",
+			pos="478,399",
+			width=1.6944];
+		"(Value(hash='91be2edf', value='output/results.txt'), 'b57796959534fe9c3edcb00244bcbc534dc7ee76')" -> "CallNode(hash='0e5f42ed', task_name='bioinformatics.genoms.check_results', args=[File(path=output/flagstat.txt, hash=e1c3d581), '\
+output/results.txt'])"	[pos="e,478,236.03 478,379.75 478,348.27 478,283.55 478,246.22"];
+	}
+	subgraph "cluster-cf4f4b5e" {
+		graph [bb="1460,372,1718,790",
+			rank=same,
+			style=invis
+		];
+		"CallNode(hash='cf4f4b5e', task_name='bioinformatics.genoms.samtools_sort', args=[File(path=output/result.bam, hash=7075ecc1), 'output/\
+result.sorted.bam'])"	[fillcolor="#B5D3E7",
+			height=0.52778,
+			label="CallNode
+bioinformatics.genoms.samtools_sort",
+			pos="1589,581",
+			width=3.3611];
+		"(Value(hash='3f0d47fb', value=File(path=output/result.sorted.bam, hash=3f0d47fb)), [CallNode(hash='cf4f4b5e', task_name='bioinformatics.genoms.samtools_\
+sort', args=[File(path=output/result.bam, hash=7075ecc1), 'output/result.sorted.bam'])])"	[height=0.52778,
+			label="Value
+File(path=output/result.sorted.bam)",
+			pos="1585,399",
+			width=3.1667];
+		"CallNode(hash='cf4f4b5e', task_name='bioinformatics.genoms.samtools_sort', args=[File(path=output/result.bam, hash=7075ecc1), 'output/\
+result.sorted.bam'])" -> "(Value(hash='3f0d47fb', value=File(path=output/result.sorted.bam, hash=3f0d47fb)), [CallNode(hash='cf4f4b5e', task_name='bioinformatics.genoms.samtools_\
+sort', args=[File(path=output/result.bam, hash=7075ecc1), 'output/result.sorted.bam'])])"	[pos="e,1585.4,418.03 1588.6,561.75 1587.9,530.27 1586.5,465.55 1585.6,428.22"];
+		"(Value(hash='707b1ccf', value='output/result.sorted.bam'), 'b1a87f55398b37e9893da51e0bf30a3a9b2643a6')"	[height=0.52778,
+			label="Value
+'output/result.sorted.bam'",
+			pos="1553,763",
+			width=2.3472];
+		"(Value(hash='707b1ccf', value='output/result.sorted.bam'), 'b1a87f55398b37e9893da51e0bf30a3a9b2643a6')" -> "CallNode(hash='cf4f4b5e', task_name='bioinformatics.genoms.samtools_sort', args=[File(path=output/result.bam, hash=7075ecc1), 'output/\
+result.sorted.bam'])"	[pos="e,1585.4,600.03 1556.6,743.75 1562.9,712.27 1575.9,647.55 1583.4,610.22"];
+	}
+	subgraph "cluster-b32859dd" {
+		graph [bb="921,8,1452,426",
+			rank=same,
+			style=invis
+		];
+		"CallNode(hash='b32859dd', task_name='bioinformatics.genoms.generate_vcf', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', \
+File(path=output/result.sorted.bam, hash=3f0...])"	[fillcolor="#B5D3E7",
+			height=0.52778,
+			label="CallNode
+bioinformatics.genoms.generate_vcf",
+			pos="1152,217",
+			width=3.2639];
+		"(Value(hash='204f6904', value=File(path=output/results.vcf, hash=204f6904)), [CallNode(hash='b32859dd', task_name='bioinformatics.genoms.generate_\
+vcf', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', File(path=output/result.sorted.bam, hash=3f0...])])"	[height=0.52778,
+			label="Value
+File(path=output/results.vcf)",
+			pos="1152,35",
+			width=2.5556];
+		"CallNode(hash='b32859dd', task_name='bioinformatics.genoms.generate_vcf', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', \
+File(path=output/result.sorted.bam, hash=3f0...])" -> "(Value(hash='204f6904', value=File(path=output/results.vcf, hash=204f6904)), [CallNode(hash='b32859dd', task_name='bioinformatics.genoms.generate_\
+vcf', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', File(path=output/result.sorted.bam, hash=3f0...])])"	[pos="e,1152,54.031 1152,197.75 1152,166.27 1152,101.55 1152,64.225"];
+		"(Value(hash='26ef2e5f', value='ref_genome/GCF_000005845.2_ASM584v2_genomic.fna'), 'bb1e69a054ddd86b38aad3e74cce4ab089867608')"	[height=0.52778,
+			label="Value
+'ref_genome/GCF_000005845.2_ASM584v2_genomic.fna'",
+			pos="1258,399",
+			width=5.1528];
+		"(Value(hash='26ef2e5f', value='ref_genome/GCF_000005845.2_ASM584v2_genomic.fna'), 'bb1e69a054ddd86b38aad3e74cce4ab089867608')" -> "CallNode(hash='b32859dd', task_name='bioinformatics.genoms.generate_vcf', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', \
+File(path=output/result.sorted.bam, hash=3f0...])"	[pos="e,1162.6,236.03 1247.3,379.75 1228.5,347.86 1189.6,281.88 1167.8,244.8"];
+		"(Value(hash='2fd2576f', value='output/results.vcf'), '600afb32e2eb58876665cb4a63af7d9d56d139ae')"	[height=0.52778,
+			label="Value
+'output/results.vcf'",
+			pos="992,399",
+			width=1.7361];
+		"(Value(hash='2fd2576f', value='output/results.vcf'), '600afb32e2eb58876665cb4a63af7d9d56d139ae')" -> "CallNode(hash='b32859dd', task_name='bioinformatics.genoms.generate_vcf', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', \
+File(path=output/result.sorted.bam, hash=3f0...])"	[pos="e,1136,236.03 1008.2,379.75 1036.8,347.59 1096.2,280.76 1129,243.86"];
+	}
+	"CallNode(hash='31d64574', task_name='bioinformatics.genoms.main', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', 'SRR20043616.fastq'])" -> "CallNode(hash='0c5dceb9', task_name='bioinformatics.genoms.generate_fasqc_report', args=['SRR20043616.fastq'])"	[pos="e,223,1328.1 700.3,1472 589.14,1438.5 351.01,1366.7 232.69,1331"];
+	"CallNode(hash='31d64574', task_name='bioinformatics.genoms.main', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', 'SRR20043616.fastq'])" -> "CallNode(hash='644589a6', task_name='bioinformatics.genoms.align', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', 'SRR20043616.fastq'])"	[pos="e,1694.5,1326.2 853.86,1473.5 1046.5,1439.8 1484.9,1362.9 1684.6,1328"];
+	"CallNode(hash='31d64574', task_name='bioinformatics.genoms.main', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', 'SRR20043616.fastq'])" -> "CallNode(hash='9b0b2d1f', task_name='bioinformatics.genoms.sam2bam', args=[File(path=output/aligned.gz, hash=a6779283), 'output/\
+result.bam'])"	[pos="e,1190.3,964.27 784.46,1471.9 878.97,1402.1 1215,1154 1215,1154 1215,1154 1215,1100 1215,1100 1215,1100 1200.2,1018.6 1192.1,974.19"];
+	"CallNode(hash='31d64574', task_name='bioinformatics.genoms.main', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', 'SRR20043616.fastq'])" -> "CallNode(hash='2c694313', task_name='bioinformatics.genoms.flagstat', args=[File(path=output/result.bam, hash=7075ecc1), 'output/\
+flagstat.txt'])"	[pos="e,769.85,600.27 769.47,1471.7 791.44,1429.4 844,1328 844,1328 844,1328 844,1282 844,1282 844,1282 739,790 739,790 739,790 739,736 \
+739,736 739,736 757.49,654.63 767.59,610.19"];
+	"CallNode(hash='31d64574', task_name='bioinformatics.genoms.main', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', 'SRR20043616.fastq'])" -> "CallNode(hash='0e5f42ed', task_name='bioinformatics.genoms.check_results', args=[File(path=output/flagstat.txt, hash=e1c3d581), '\
+output/results.txt'])"	[pos="e,469.7,236.27 714.94,1471.9 609.78,1429.6 357,1328 357,1328 357,1328 338,1128 338,1128 338,1128 338,1128 338,580 338,580 408,372 \
+408,372 408,372 445.3,289.94 465.44,245.63"];
+	"CallNode(hash='31d64574', task_name='bioinformatics.genoms.main', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', 'SRR20043616.fastq'])" -> "CallNode(hash='cf4f4b5e', task_name='bioinformatics.genoms.samtools_sort', args=[File(path=output/result.bam, hash=7075ecc1), 'output/\
+result.sorted.bam'])"	[pos="e,1595.9,600.27 805.24,1471.9 988.51,1398.7 1666,1128 1666,1128 1666,1128 1666,1128 1666,944 1666,944 1647,736 1647,736 1647,736 \
+1616.2,654.29 1599.5,609.91"];
+	"CallNode(hash='31d64574', task_name='bioinformatics.genoms.main', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', 'SRR20043616.fastq'])" -> "CallNode(hash='b32859dd', task_name='bioinformatics.genoms.generate_vcf', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', \
+File(path=output/result.sorted.bam, hash=3f0...])"	[pos="e,1124.5,236.27 771.05,1471.7 796.68,1429.4 858,1328 858,1328 858,1328 902,1128 902,1128 902,1128 902,1128 902,762 902,762 920,372 \
+920,372 920,372 1051,285.05 1116.1,241.82"];
+	"(Value(hash='a6779283', value=File(path=output/aligned.gz, hash=a6779283)), [CallNode(hash='644589a6', task_name='bioinformatics.genoms.align', \
+args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', 'SRR20043616.fastq'])])" -> "CallNode(hash='9b0b2d1f', task_name='bioinformatics.genoms.sam2bam', args=[File(path=output/aligned.gz, hash=a6779283), 'output/\
+result.bam'])"	[pos="e,1247.3,964.09 1727,1108 1615.3,1074.5 1376,1002.7 1257,967.01"];
+	"(Value(hash='7075ecc1', value=File(path=output/result.bam, hash=7075ecc1)), [CallNode(hash='9b0b2d1f', task_name='bioinformatics.genoms.sam2bam', \
+args=[File(path=output/aligned.gz, hash=a6779283), 'output/result.bam'])])" -> "CallNode(hash='2c694313', task_name='bioinformatics.genoms.flagstat', args=[File(path=output/result.bam, hash=7075ecc1), 'output/\
+flagstat.txt'])"	[pos="e,815.46,600.07 1145.5,743.92 1069.3,710.7 907.22,640.06 824.65,604.07"];
+	"(Value(hash='7075ecc1', value=File(path=output/result.bam, hash=7075ecc1)), [CallNode(hash='9b0b2d1f', task_name='bioinformatics.genoms.sam2bam', \
+args=[File(path=output/aligned.gz, hash=a6779283), 'output/result.bam'])])" -> "CallNode(hash='cf4f4b5e', task_name='bioinformatics.genoms.samtools_sort', args=[File(path=output/result.bam, hash=7075ecc1), 'output/\
+result.sorted.bam'])"	[pos="e,1548.6,600.07 1227.4,743.92 1301.4,710.76 1458.7,640.35 1539.2,604.29"];
+	"(Value(hash='e1c3d581', value=File(path=output/flagstat.txt, hash=e1c3d581)), [CallNode(hash='2c694313', task_name='bioinformatics.genoms.flagstat', \
+args=[File(path=output/result.bam, hash=7075ecc1), 'output/flagstat.txt'])])" -> "CallNode(hash='0e5f42ed', task_name='bioinformatics.genoms.check_results', args=[File(path=output/flagstat.txt, hash=e1c3d581), '\
+output/results.txt'])"	[pos="e,507.32,236.07 740.66,379.92 687.43,347.1 574.97,277.78 515.96,241.4"];
+	"(Value(hash='3f0d47fb', value=File(path=output/result.sorted.bam, hash=3f0d47fb)), [CallNode(hash='cf4f4b5e', task_name='bioinformatics.genoms.samtools_\
+sort', args=[File(path=output/result.bam, hash=7075ecc1), 'output/result.sorted.bam'])])" -> "CallNode(hash='b32859dd', task_name='bioinformatics.genoms.generate_vcf', args=['ref_genome/GCF_000005845.2_ASM584v2_genomic.fna', \
+File(path=output/result.sorted.bam, hash=3f0...])"	[pos="e,1195.5,236.07 1541.5,379.92 1461.5,346.66 1291.3,275.92 1204.8,239.96"];
+}
