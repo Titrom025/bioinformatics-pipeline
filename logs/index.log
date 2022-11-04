@@ -1,0 +1,9 @@
+[bwa_index] Pack FASTA... 0.02 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 0.65 seconds elapse.
+[bwa_index] Update BWT... 0.02 sec
+[bwa_index] Pack forward-only FASTA... 0.01 sec
+[bwa_index] Construct SA from BWT and Occ... 0.19 sec
+[main] Version: 0.7.17-r1198-dirty
+[main] CMD: tools/bwa/bwa index ref_genome/GCF_000005845.2_ASM584v2_genomic.fna
+[main] Real time: 0.894 sec; CPU: 0.893 sec

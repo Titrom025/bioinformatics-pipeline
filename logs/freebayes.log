@@ -1,0 +1,5 @@
+ERROR(freebayes): Opened BAM reader without index file, jumping is disabled.
+BamMultiReader::LocatingIndexes: error while locating index files: 
+	BamReader::LocateIndex: could not locate index: 
+	BamRandomAccessController::LocateIndex: could not find index file for:output/result.sorted.bam
+

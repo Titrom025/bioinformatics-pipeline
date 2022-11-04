@@ -1,0 +1,2 @@
+Result value: 99.27
+OK
